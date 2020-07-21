@@ -35,9 +35,12 @@ export class PortfolioPage {
     private readonly dataService: DataService
   ) {
     this.wallets = this.walletsProvider.wallets.asObservable()
-
+    console.log('Wallets-Portfolio')
+    console.log(this.wallets)
     // If a wallet gets added or removed, recalculate all values
     this.wallets.subscribe((wallets: AirGapMarketWallet[]) => {
+      console.log(wallets)
+
       this.calculateTotal(wallets)
 
       this.refreshWalletGroups(wallets)
@@ -142,7 +145,7 @@ export class PortfolioPage {
   public calculateTotal(wallets: AirGapMarketWallet[], refresher: any = null) {
     let newTotal = 0
     const cryptoToFiatPipe = new CryptoToFiatPipe()
-
+    console.log(wallets)
     wallets.forEach(wallet => {
       const fiatValue = cryptoToFiatPipe.transform(wallet.currentBalance, {
         protocolIdentifier: wallet.protocolIdentifier,

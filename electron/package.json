@@ -1,9 +1,9 @@
 {
-  "name": "airgap-wallet",
-  "productName": "AirGap Wallet",
+  "name": "bobo-wallet",
+  "productName": "Bobo Wallet",
   "version": "0.0.1",
   "author": "Papers GmbH <contact@papers.ch> (https://papers.ch)",
-  "homepage": "https://www.airgap.it",
+  "homepage": "https://www.hypermine.in/bobo",
   "main": "index.js",
   "private": true,
   "scripts": {

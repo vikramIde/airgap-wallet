@@ -6,7 +6,7 @@
 
 > Your old smartphone is your new ‘hardware wallet’
 
-[Bobo](https://Bobo.it) is a crypto wallet system, that let's you secure cypto assets with one secret on an offline device. The Bobo Wallet application is installed on an everyday smartphone whereas [Bobo Vault](https://github.com/Bobo-it/Bobo-vault) is installed on a dedicated or old smartphone that has no connection to any network, thus it is air gapped.
+[Bobo](https://hypermine.in/bobo.it) is a crypto wallet system, that let's you secure cypto assets with one secret on an offline device. The Bobo Wallet application is installed on an everyday smartphone whereas [Bobo Vault](https://github.com/Bobo-it/Bobo-vault) is installed on a dedicated or old smartphone that has no connection to any network, thus it is air gapped.
 
 ## Description
 
