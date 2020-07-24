@@ -1,5 +1,5 @@
 {
-  "name": "AirGap Wallet (Alpha)",
+  "name": "Bobo Wallet (Alpha)",
   "version": "0.0.1",
   "description": "Create crypto transactions from your browser and sign it offline with the AirGap Vault mobile application for Ethereum.",
   "content_security_policy": "script-src 'self' 'unsafe-inline' 'unsafe-eval' 'sha256-lG4v70824YB45U1RBIea+APGH4NCk0TKCr0fQRbsjik='; object-src 'self'; default-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';",

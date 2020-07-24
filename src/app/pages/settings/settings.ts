@@ -45,9 +45,9 @@ export class SettingsPage {
 
   public share(): void {
     const options = {
-      title: 'Checkout airgap.it', // Set a title for any message. This will be the subject if sharing to email
+      title: 'Checkout hypermine.in', // Set a title for any message. This will be the subject if sharing to email
       text: 'Take a look at the app I found. Its the most secure practical way to do crypto transactions.', // Set some text to share
-      url: 'https://www.airgap.it', // Set a URL to share
+      url: 'https://www.hypermine.in', // Set a URL to share
       dialogTitle: 'Pick an app' // Set a title for the share modal. Android only
     }
 
@@ -129,7 +129,7 @@ export class SettingsPage {
   /*
   // Removed because of google policies
   public donate(): void {
-    this.openUrl('https://airgap.it/#donate')
+    this.openUrl('https://hypermine.in/#donate')
   }
   */
 
@@ -146,7 +146,7 @@ export class SettingsPage {
   }
 
   public faq(): void {
-    this.browserService.openUrl('https://airgap.it/#faq')
+    this.browserService.openUrl('https://hypermine.in/#faq')
   }
 
   public aboutBeacon(): void {

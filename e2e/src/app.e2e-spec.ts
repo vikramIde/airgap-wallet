@@ -51,7 +51,7 @@ describe('AirGap Wallet', () => {
     const text: string = await page.getParagraphText()
 
     await expect(text).toContain(
-      'Start by adding coins to AirGap Wallet, you will also need the AirGap Vault application where your secret is securely stored.'
+      'Start by adding coins to Bobo Wallet, you will also need the AirGap Vault application where your secret is securely stored.'
     )
   })
 

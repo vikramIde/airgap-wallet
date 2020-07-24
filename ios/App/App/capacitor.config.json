@@ -1,6 +1,6 @@
 {
   "appId": "it.airgap.wallet",
-  "appName": "AirGap Wallet",
+  "appName": "Bobo Wallet",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
