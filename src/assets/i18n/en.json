@@ -51,19 +51,19 @@
     "title": "The New Crypto Wallet Standard",
     "highest": {
       "label": "Highest Security",
-      "text": "With the AirGap <b>two device approach</b> secure key handling becomes more accessible.</p>"
+      "text": "With the Bobo <b>two device approach</b> secure key handling becomes more accessible.</p>"
     },
     "medium": {
       "label": "Medium Security",
-      "text": "With the AirGap <b>two app approach</b> secure key handling becomes more accessible."
+      "text": "With the Bobo <b>two app approach</b> secure key handling becomes more accessible."
     },
     "vault": {
       "heading": "AirGap Vault",
-      "text": "The private key is generated and securely stored on another device with the AirGap Vault app. <b>You have to install AirGap Vault to use AirGap Wallet</b>"
+      "text": "The private key is generated and securely stored on another device with the AirGap Vault app. <b>You have to install AirGap Vault to use Bobo Wallet</b>"
     },
     "wallet": {
-      "heading": "AirGap Wallet",
-      "text": "<b>This is the AirGap Wallet application</b>, that deals with only public information and is responsible for broadcasting transactions to the blockchain."
+      "heading": "Bobo Wallet",
+      "text": "<b>This is the Bobo Wallet application</b>, that deals with only public information and is responsible for broadcasting transactions to the blockchain."
     },
     "communication": {
       "highest_text": "One-way communication with QR codes.",
@@ -75,7 +75,7 @@
   "introduction-download": {
     "title": "Install AirGap Vault",
     "heading": "Let's install AirGap Vault!",
-    "description": "Not sure how and where to install AirGap Vault and AirGap Wallet? We have a detailed step by step guide with all the instructions.",
+    "description": "Not sure how and where to install AirGap Vault and Bobo Wallet? We have a detailed step by step guide with all the instructions.",
     "guide-link_label": "Show Guide",
     "text": "There are a few ways to install AirGap Vault, choose the one that fits the best for you.",
     "android": "Android",
@@ -91,14 +91,14 @@
     "go_label": "Let's Go"
   },
   "portfolio": {
-    "empty-state_text": "Start by adding coins to AirGap Wallet, you will also need the AirGap Vault application where your secret is securely stored.",
+    "empty-state_text": "Start by adding coins to Bobo Wallet, you will also need the AirGap Vault application where your secret is securely stored.",
     "add-coins_label": "Add Coins"
   },
   "scan": {
     "title": "Scan QR",
     "text": "Scan a sync QR to add an account or scan a transaction QR to confirm and send it.",
     "multi-qr_text": "This transaction consists of multiple QR codes. Keep your camera on the changing QRs and wait until all codes are scanned.",
-    "empty-state_heading": "In order to scan QR codes, AirGap Wallet needs the <span class=\"style__strong color__primary\">camera permission</span>.",
+    "empty-state_heading": "In order to scan QR codes, Bobo Wallet needs the <span class=\"style__strong color__primary\">camera permission</span>.",
     "grant-permission_label": "Grant permission"
   },
   "scan-address": {
@@ -107,7 +107,7 @@
   },
   "scan-sync": {
     "title": "Sync Account Data",
-    "text": "Open AirGap Vault, select an <span ion-text color='white'>account</span> and then <span ion-text color='white'>Sync</span>, scan the Sync QR code with AirGap Wallet.",
+    "text": "Open AirGap Vault, select an <span ion-text color='white'>account</span> and then <span ion-text color='white'>Sync</span>, scan the Sync QR code with Bobo Wallet.",
     "description": "No private keys or any non-public data will be shared during this process.",
     "scan_label": "Scan Sync QR Code"
   },
@@ -213,9 +213,9 @@
     "title": "Vault Interaction",
     "heading": "How would you like to interact with <span class=\"style__strong color__primary\">AirGap Vault</span>?",
     "same-device_label": "Same Device",
-    "same-device_info": "AirGap Vault and AirGap Wallet are installed on the same device.",
+    "same-device_info": "AirGap Vault and Bobo Wallet are installed on the same device.",
     "offline-device_label": "Offline Device",
-    "offline-device_info": "AirGap Vault is installed on an offline device, scan the QR code with AirGap Wallet."
+    "offline-device_info": "AirGap Vault is installed on an offline device, scan the QR code with Bobo Wallet."
   },
   "wallet-address": {
     "title": "Account Address",
@@ -264,6 +264,7 @@
     "wallets": "Accounts",
     "scan": "Scan QRs",
     "settings": "Settings",
+    "banking": "Bankings",
     "exchange": "Exchange"
   },
   "add-account": {
@@ -301,12 +302,12 @@
       },
       "slide-2_text": "Select the created account and on the “Account Address” page choose <strong>“Sync Account”</strong>.",
       "slide-3": {
-        "text": "You need to sync the account from AirGap Vault to AirGap Wallet.",
+        "text": "You need to sync the account from AirGap Vault to Bobo Wallet.",
         "description": "¬ If AirGap Vault is on an <strong>offline device</strong>, scan the <strong>QR code</strong> on the next page.<br>¬ If AirGap Vault is on the <strong>same device</strong>, use the same device <strong>sync button</strong>."
       },
       "slide-4": {
-        "text": "The account can now be imported to AirGap Wallet.",
-        "description": "You’re now ready to create <strong>{{protocolName}}</strong> transactions with AirGap Vault and AirGap Wallet."
+        "text": "The account can now be imported to Bobo Wallet.",
+        "description": "You’re now ready to create <strong>{{protocolName}}</strong> transactions with AirGap Vault and Bobo Wallet."
       }
     },
     "back": "Back",
@@ -352,6 +353,27 @@
       "message": "It seems that no exchange could currently be set up, please excuse the inconvenience and try again later"
     } 
   },
+  "banking": {
+    "title": "Convert Crypto to Fiat",
+    "exchange_label": "Exchange",
+    "powered-by_label": "powered by",
+    "switch-exchange_label": "Transak",
+    "onboarding": {
+      "heading": "You can exchange your <span class=\"style__strong color__primary\">Ethereum</span> to <span class=\"style__strong color__primary\">USD/INR</span> and do other exchanges.",
+      "description": "Easily swap all supported crypto currencies directly inside Bobo Wallet.",
+      "exchange_label": "Start Exchanging"
+    },
+    "no-currencies": {
+      "heading": "In order to exchange, you need at least two currencies in Bobo Wallet like <span class=\"style__strong color__primary\">Ethereum</span> and <span class=\"style__strong color__primary\">Bitcoin</span>.",
+      "description": "Before you can easily swap currencies in Bobo Wallet you need to add at least two different ones.",
+      "exchange_label": "Add Coins"
+    }
+    ,"loading": {
+      "setup": "Setting up exchange ... ",
+      "header": "Loading Error",
+      "message": "It seems that no exchange could currently be set up, please excuse the inconvenience and try again later"
+    } 
+  },
   "swap": {
     "min-amount_label": "(min. {{minExchangeAmount}})",
     "sell_label": "Sell",
@@ -377,7 +399,8 @@
     "receiving-to_label": "Receiving to",
     "disclaimer": "Exchange services provided by Changelly. By clicking Confirm Exchange, I acknowledge and understand that my transaction may trigger AML/KYC verification according to <span class=\"style__strong color__primary\">Changelly AML/KYC</span>.",
     "changelly_disclaimer": "Exchange services provided by Changelly. By clicking Confirm Exchange, I acknowledge and understand that my transaction may trigger AML/KYC verification according to <span class=\"style__strong color__primary\">Changelly AML/KYC</span>.",
-    "changenow_disclaimer": "Exchange services provided by ChangeNow. By clicking Confirm Exchange, I acknowledge and understand that my transaction may trigger AML/KYC verification according to <span class=\"style__strong color__primary\">ChangeNow AML/KYC</span>."
+    "changenow_disclaimer": "Exchange services provided by ChangeNow. By clicking Confirm Exchange, I acknowledge and understand that my transaction may trigger AML/KYC verification according to <span class=\"style__strong color__primary\">ChangeNow AML/KYC</span>.",
+    "transack_disclaimer": "Exchange services provided by Transack. By clicking Confirm Exchange, I acknowledge and understand that my transaction may trigger AML/KYC verification according to <span class=\"style__strong color__primary\">Transack AML/KYC</span>."
   },
   "exchange-custom": {
     "title": "Select a Gatekeeper",
@@ -526,7 +549,7 @@
   "introduction-push": {
     "title": "Push Notifications",
     "heading": "You can receive push notifications if your accounts receive transactions.",
-    "description": "First you have to grant AirGap Wallet the push notification permission.",
+    "description": "First you have to grant Bobo Wallet the push notification permission.",
     "grant-permission_label": "Grant Permission"
   },
   "portfolio-item": {

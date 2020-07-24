@@ -36,6 +36,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'banking',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../banking/banking.module').then(m => m.BankingPageModule)
+          }
+        ]
+      },
+      {
         path: 'settings',
         children: [
           {

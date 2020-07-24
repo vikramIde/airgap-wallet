@@ -5,7 +5,8 @@ import { ErrorCategory, handleErrorSentry } from '../../services/sentry-error-ha
 import { SettingsKey, StorageProvider } from '../../services/storage/storage'
 import { WebExtensionProvider } from '../../services/web-extension/web-extension'
 import { DisclaimerWebExtensionPage } from '../disclaimer-web-extension/disclaimer-web-extension'
-import { ExchangePage } from '../exchange/exchange'
+// import { ExchangePage } from '../exchange/exchange'
+import { BankingPage } from '../banking/banking'
 import { IntroductionPage } from '../introduction/introduction'
 import { PortfolioPage } from '../portfolio/portfolio'
 import { ScanPage } from '../scan/scan'
@@ -19,7 +20,7 @@ import { SettingsPage } from '../settings/settings'
 export class TabsPage {
   public tab1Root = PortfolioPage
   public tab2Root = ScanPage
-  public tab3Root = ExchangePage
+  public tab3Root = BankingPage
   public tab4Root = SettingsPage
 
   public isMobile = false

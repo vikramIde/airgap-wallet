@@ -23,6 +23,7 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item'
 import { QrClipboardComponent } from './qr-clipboard/qr-clipboard'
 import { SignedTransactionComponent } from './signed-transaction/signed-transaction'
 import { SwapComponent } from './swap/swap'
+import { TransakComponent } from './transak/transak'
 import { TezosDelegationCard } from './tezos-delegation-card/tezos-delegation-card'
 import { TransactionListComponent } from './transaction-list/transaction-list.component'
 import { TransactionItemComponent } from './transaction-item/transaction-item.component'
@@ -43,6 +44,7 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
     AddressRowComponent,
     FromToComponent,
     SwapComponent,
+    TransakComponent,
     AccountEditPopoverComponent,
     AmountComponent,
     CardActionableComponent,
@@ -86,6 +88,7 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
     AmountComponent,
     FromToComponent,
     SwapComponent,
+    TransakComponent,
     AccountEditPopoverComponent,
     CardActionableComponent,
     EmptyStateComponent,
