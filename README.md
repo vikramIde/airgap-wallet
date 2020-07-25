@@ -99,3 +99,15 @@ If you discover a security vulnerability within this application, please send an
 
 - If you find any bugs, submit an [issue](../../issues) or open [pull-request](../../pulls), helping us catch and fix them.
 - Engage with other users and developers on the [AirGap Telegram](https://t.me/AirGap).
+
+## Building IOS/Android
+
+If youa re getting `CFBundleShortVersionString` issue while building the IOS version, Just change the dynamic value in info.plist to static number such as `##.#.#`
+
+## Capacitor commands
+
+```
+    npm run build
+    npx cap open ios/android
+    npx cap sync
+```

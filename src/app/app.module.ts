@@ -12,6 +12,7 @@ import { Keyboard } from '@ionic-native/keyboard/ngx'
 import { QRScanner } from '@ionic-native/qr-scanner/ngx'
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular'
 import { IonicStorageModule } from '@ionic/storage'
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { ZXingScannerModule } from '@zxing/ngx-scanner'
@@ -145,7 +146,8 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
     AppInfoProvider,
     PushProvider,
     PushBackendProvider,
-    SerializerService
+    SerializerService,
+    InAppBrowser
   ],
   bootstrap: [AppComponent]
 })

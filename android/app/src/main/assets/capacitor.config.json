@@ -1,5 +1,5 @@
 {
-  "appId": "it.airgap.wallet",
+  "appId": "it.bobo.wallet",
   "appName": "Bobo Wallet",
   "bundledWebRuntime": false,
   "npmClient": "npm",
