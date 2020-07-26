@@ -66,7 +66,7 @@ export class DeepLinkProvider {
   public showAppNotFoundAlert(): void {
     this.translateService
       .get(['deep-link.app-not-found.title', 'deep-link.app-not-found.message', 'deep-link.app-not-found.ok'], {
-        otherAppName: 'AirGap Vault'
+        otherAppName: 'Bobo Vault'
       })
       .subscribe(async translated => {
         const alert: HTMLIonAlertElement = await this.alertCtrl.create({

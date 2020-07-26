@@ -6,7 +6,7 @@
 
 > Your old smartphone is your new ‘hardware wallet’
 
-[AirGap](https://hypermine.in) is a crypto wallet system, that let's you secure cypto assets with one secret on an offline device. The Bobo Wallet application is installed on an everyday smartphone whereas [AirGap Vault](https://github.com/airgap-it/airgap-vault) is installed on a dedicated or old smartphone that has no connection to any network, thus it is air gapped.
+[AirGap](https://hypermine.in) is a crypto wallet system, that let's you secure cypto assets with one secret on an offline device. The Bobo Wallet application is installed on an everyday smartphone whereas [Bobo Vault](https://github.com/airgap-it/airgap-vault) is installed on a dedicated or old smartphone that has no connection to any network, thus it is air gapped.
 
 ## Description
 
@@ -23,7 +23,7 @@ Bobo Wallet has an overview of all accounts with their respective balances and t
 
 ## Features
 
-- Portfolio Overview of accounts synced from AirGap Vault
+- Portfolio Overview of accounts synced from Bobo Vault
 - Communication with the Vault application over QR codes if installed on a second device or app switching if installed on the same device
 - Create transactions for all supported currencies like Aeternity, Ethereum, Bitcoin etc.
 - Broadcast signed transactions

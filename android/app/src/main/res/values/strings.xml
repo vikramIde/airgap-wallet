@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Bobo Wallet</string>
-    <string name="title_activity_main">Bobo Wallet</string>
-    <string name="package_name">it.bobo.wallet</string>
-    <string name="custom_url_scheme">bobo-wallet</string>
+    <string name="app_name">Bobo App</string>
+    <string name="title_activity_main">Bobo App</string>
+    <string name="package_name">it.bobo</string>
+    <string name="custom_url_scheme">bobo-app</string>
 </resources>

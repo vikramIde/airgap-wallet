@@ -1,5 +1,5 @@
 {
-  "appId": "it.bobo.wallet",
+  "appId": "bobo.wallet",
   "appName": "Bobo Wallet",
   "bundledWebRuntime": false,
   "npmClient": "npm",
