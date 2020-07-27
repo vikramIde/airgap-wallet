@@ -19,14 +19,10 @@ export enum TransactionStatus {
 }
 
 export interface TransakOptions {
-  apiKey: string
-  environment: string
   defaultCryptoCurrency: string
   walletAddress: string
-  themeColor?: string
   fiatCurrency?: string
   fiatAmount?: string
-  hostURL: string
   partnerOrderId: string
   partnerCustomerId: string
   status: string
@@ -69,7 +65,16 @@ export class TransakProvider implements TransakOptions {
     this.walletAddress = address
     this.status = 'ORDER_CREATED'
     //I need to check if this works or not
-    this.transakorders.push(this)
+    let { partnerOrderId, partnerCustomerId, defaultCryptoCurrency, walletAddress, status } = this
+
+    this.transakorders.push({
+      partnerOrderId,
+      partnerCustomerId,
+      defaultCryptoCurrency,
+      walletAddress,
+      status
+    })
+
     await this.persist()
 
     let url = await this.makeUrl()
@@ -77,25 +82,25 @@ export class TransakProvider implements TransakOptions {
   }
 
   private async makeUrl() {
-    let baseUrl = 'https://global.transak.com?'
+    let baseUrl = 'http://staging-global.transak.com/?'
 
-    if (this.apiKey) baseUrl = baseUrl + this.apiKey + '&'
+    if (this.apiKey) baseUrl = baseUrl + 'apiKey=' + this.apiKey + '&'
 
-    if (this.hostURL) baseUrl = baseUrl + this.hostURL + '&'
+    if (this.hostURL) baseUrl = baseUrl + 'hostURL=' + this.hostURL + '&'
 
-    if (this.themeColor) baseUrl = baseUrl + this.themeColor + '&'
+    if (this.themeColor) baseUrl = baseUrl + 'themeColor=' + this.themeColor + '&'
 
-    if (this.defaultCryptoCurrency) baseUrl = baseUrl + this.defaultCryptoCurrency + '&'
+    if (this.defaultCryptoCurrency) baseUrl = baseUrl + 'defaultCryptoCurrency=' + this.defaultCryptoCurrency + '&'
 
-    if (this.fiatCurrency) baseUrl = baseUrl + this.fiatCurrency + '&'
+    if (this.fiatCurrency) baseUrl = baseUrl + 'fiatCurrency=' + this.fiatCurrency + '&'
 
-    if (this.fiatAmount) baseUrl = baseUrl + this.fiatAmount + '&'
+    if (this.fiatAmount) baseUrl = baseUrl + 'fiatAmount=' + this.fiatAmount + '&'
 
-    if (this.walletAddress) baseUrl = baseUrl + this.walletAddress + '&'
+    if (this.walletAddress) baseUrl = baseUrl + 'walletAddress=' + this.walletAddress + '&'
 
-    if (this.partnerOrderId) baseUrl = baseUrl + this.partnerOrderId + '&'
+    if (this.partnerOrderId) baseUrl = baseUrl + 'partnerOrderId=' + this.partnerOrderId + '&'
 
-    if (this.partnerCustomerId) baseUrl = baseUrl + this.partnerCustomerId + '&'
+    if (this.partnerCustomerId) baseUrl = baseUrl + 'partnerCustomerId=' + this.partnerCustomerId + '&'
 
     return baseUrl
   }

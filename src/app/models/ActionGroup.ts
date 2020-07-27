@@ -238,14 +238,11 @@ export class ActionGroup {
     return new ButtonAction({ name: 'account-transaction-list.buy-sell_label', icon: '', identifier: 'buysell-action' }, () => {
       return new SimpleAction(() => {
         return new Promise<void>(resolve => {
-          const info = {
-            wallet: this.callerContext.wallet
-          }
-          this.callerContext.dataService.setData(DataServiceKey.DETAIL, info)
-          this.callerContext.router
-            .navigateByUrl('/delegation-detail/' + DataServiceKey.DETAIL)
-            .catch(handleErrorSentry(ErrorCategory.NAVIGATION))
+          // const info = {
+          //   wallet: this.callerContext.wallet
+          // }
 
+          this.callerContext.transakProvider.createOrder('XTZ', 'tz1VFap5sVgCNZooJdcC6sn8S7AHEacYaZwv')
           resolve()
         })
       })
