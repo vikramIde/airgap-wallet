@@ -49,6 +49,9 @@ export class ActionGroup {
     actionMap.set(MainProtocolSymbols.KUSAMA, async () => {
       return this.getKusamaActions()
     })
+    actionMap.set(MainProtocolSymbols.AE, async () => {
+      return this.getAeternityActions()
+    })
 
     const actionFunction: () => Promise<Action<any, any>[]> | undefined = actionMap.get(this.callerContext.protocolIdentifier)
 
@@ -57,7 +60,7 @@ export class ActionGroup {
 
   private getTezosActions(): Action<any, any>[] {
     const delegateButtonAction = this.createDelegateButtonAction()
-
+    const buySellActionButton = this.createBuySellButtonAction()
     const addTokenButtonAction = new ButtonAction(
       { name: 'account-transaction-list.add-tokens_label', icon: 'add', identifier: 'add-tokens' },
       () => {
@@ -83,7 +86,7 @@ export class ActionGroup {
       }
     )
 
-    return [delegateButtonAction, addTokenButtonAction]
+    return [delegateButtonAction, addTokenButtonAction, buySellActionButton]
   }
 
   public getImportAccountsAction(): ButtonAction<string[], ImportAccoutActionContext> {
@@ -180,6 +183,11 @@ export class ActionGroup {
 
     return [delegateButtonAction]
   }
+  private getAeternityActions(): Action<any, any>[] {
+    const buySellActionButton = this.createBuySellButtonAction()
+
+    return [buySellActionButton]
+  }
 
   private async addKtAddress(xtzWallet: AirGapMarketWallet, index: number, ktAddresses: string[]): Promise<AirGapMarketWallet> {
     let wallet = this.callerContext.accountProvider.walletByPublicKeyAndProtocolAndAddressIndex(
@@ -210,6 +218,24 @@ export class ActionGroup {
 
   private createDelegateButtonAction(): ButtonAction<void, void> {
     return new ButtonAction({ name: 'account-transaction-list.delegate_label', icon: 'logo-usd', identifier: 'delegate-action' }, () => {
+      return new SimpleAction(() => {
+        return new Promise<void>(resolve => {
+          const info = {
+            wallet: this.callerContext.wallet
+          }
+          this.callerContext.dataService.setData(DataServiceKey.DETAIL, info)
+          this.callerContext.router
+            .navigateByUrl('/delegation-detail/' + DataServiceKey.DETAIL)
+            .catch(handleErrorSentry(ErrorCategory.NAVIGATION))
+
+          resolve()
+        })
+      })
+    })
+  }
+
+  private createBuySellButtonAction(): ButtonAction<void, void> {
+    return new ButtonAction({ name: 'account-transaction-list.buy-sell_label', icon: '', identifier: 'buysell-action' }, () => {
       return new SimpleAction(() => {
         return new Promise<void>(resolve => {
           const info = {

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core'
 import { Storage } from '@ionic/storage'
 import { AirGapMarketWallet, ICoinProtocol } from 'airgap-coin-lib'
 import { ExchangeTransaction } from '../exchange/exchange'
+import { TransakOptions } from '../transak/transak'
 import { ProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
 import { Network } from '@airgap/beacon-sdk'
 
@@ -25,6 +26,11 @@ export enum SettingsKey {
   SELECTED_ACCOUNT = 'selectedAccount',
   LAST_TX_BROADCAST = 'lastTxBroadcast',
   USER_ID = 'user_id',
+  USER_FIRST_NAME = 'user_first_name',
+  USER_LAST_NAME = 'user_last_name',
+  USER_EMAIL = 'user_email',
+  USER_MOBILE = 'user_mobile',
+  TRANSAK_ORDER = 'transak_order',
   SETTINGS_SERIALIZER_ENABLE_V2 = 'SETTINGS_SERIALIZER_ENABLE_V2',
   SETTINGS_SERIALIZER_CHUNK_TIME = 'SETTINGS_SERIALIZER_CHUNK_TIME',
   SETTINGS_SERIALIZER_CHUNK_SIZE = 'SETTINGS_SERIALIZER_CHUNK_SIZE',
@@ -60,6 +66,11 @@ interface SettingsKeyReturnType {
   [SettingsKey.SELECTED_ACCOUNT]: AirGapMarketWallet | undefined
   [SettingsKey.LAST_TX_BROADCAST]: IBroadcastTransaction | undefined
   [SettingsKey.USER_ID]: string | undefined
+  [SettingsKey.TRANSAK_ORDER]: TransakOptions[] | undefined
+  [SettingsKey.USER_FIRST_NAME]: string | undefined
+  [SettingsKey.USER_LAST_NAME]: string | undefined
+  [SettingsKey.USER_EMAIL]: string | undefined
+  [SettingsKey.USER_MOBILE]: string | undefined
   [SettingsKey.SETTINGS_SERIALIZER_ENABLE_V2]: boolean
   [SettingsKey.SETTINGS_SERIALIZER_CHUNK_TIME]: number
   [SettingsKey.SETTINGS_SERIALIZER_CHUNK_SIZE]: number
@@ -81,6 +92,11 @@ const defaultValues: SettingsKeyReturnDefaults = {
   [SettingsKey.SELECTED_ACCOUNT]: undefined,
   [SettingsKey.LAST_TX_BROADCAST]: undefined,
   [SettingsKey.USER_ID]: undefined,
+  [SettingsKey.TRANSAK_ORDER]: [],
+  [SettingsKey.USER_FIRST_NAME]: undefined,
+  [SettingsKey.USER_LAST_NAME]: undefined,
+  [SettingsKey.USER_EMAIL]: undefined,
+  [SettingsKey.USER_MOBILE]: undefined,
   [SettingsKey.SETTINGS_SERIALIZER_ENABLE_V2]: false,
   [SettingsKey.SETTINGS_SERIALIZER_CHUNK_TIME]: 500,
   [SettingsKey.SETTINGS_SERIALIZER_CHUNK_SIZE]: 100,

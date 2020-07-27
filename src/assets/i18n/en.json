@@ -3,6 +3,7 @@
     "title": "Account",
     "transactions_label": "Transactions",
     "add-tokens_label": "Add Tokens",
+    "buy-sell_label": "BUY/SELL",
     "import-accounts_label": "Import Accounts",
     "delegate_label": "Delegation",
     "undelegate_label": "Undelegate",
