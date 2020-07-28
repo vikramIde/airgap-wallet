@@ -168,8 +168,9 @@ export class ActionGroup {
         return addTokenAction
       }
     )
+    const buySellActionButton = this.createBuySellButtonAction()
 
-    return [addTokenButtonAction]
+    return [addTokenButtonAction, buySellActionButton]
   }
 
   private getPolkadotActions(): Action<any, any>[] {
@@ -238,11 +239,12 @@ export class ActionGroup {
     return new ButtonAction({ name: 'account-transaction-list.buy-sell_label', icon: '', identifier: 'buysell-action' }, () => {
       return new SimpleAction(() => {
         return new Promise<void>(resolve => {
-          // const info = {
-          //   wallet: this.callerContext.wallet
-          // }
+          let cryptoSymbol: string = this.callerContext.wallet.protocol.marketSymbol.toUpperCase()
 
-          this.callerContext.transakProvider.createOrder('XTZ', 'tz1VFap5sVgCNZooJdcC6sn8S7AHEacYaZwv')
+          let address: string = this.callerContext.wallet.addresses[0]
+          if (cryptoSymbol && address) {
+            this.callerContext.transakProvider.createOrder(cryptoSymbol, address)
+          }
           resolve()
         })
       })
