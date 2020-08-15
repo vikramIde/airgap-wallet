@@ -78,7 +78,7 @@
     "@sentry/browser": "5.1.3",
     "@transak/transak-sdk": "^1.0.23",
     "@zxing/ngx-scanner": "3.0.0",
-    "airgap-coin-lib": "0.9.0",
+    "airgap-coin-lib": "file://Users/vikrambhushan/Documents/Harmony/airgap-coin-lib",
     "angular2-template-loader": "^0.6.2",
     "angularx-qrcode": "^1.5.3",
     "bignumber.js": "8.0.1",
