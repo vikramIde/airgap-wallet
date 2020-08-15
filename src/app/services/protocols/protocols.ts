@@ -4,6 +4,7 @@ import {
   addSubProtocol,
   addSupportedProtocol,
   AeternityProtocol,
+  HarmonyProtocol,
   BitcoinProtocol,
   CosmosProtocol,
   EthereumProtocol,
@@ -60,6 +61,7 @@ export class ProtocolsProvider {
   constructor() {
     try {
       addSupportedProtocol(new AeternityProtocol())
+      addSupportedProtocol(new HarmonyProtocol())
       addSupportedProtocol(new BitcoinProtocol())
       addSupportedProtocol(new EthereumProtocol())
       addSupportedProtocol(new GroestlcoinProtocol())
