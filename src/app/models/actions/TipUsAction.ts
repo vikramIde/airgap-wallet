@@ -1,8 +1,8 @@
 import { Router } from '@angular/router'
 import { AlertController, LoadingController, PopoverController, ToastController } from '@ionic/angular'
 import { AlertOptions } from '@ionic/core'
-import { AirGapMarketWallet } from 'airgap-coin-lib'
-import { Action } from 'airgap-coin-lib/dist/actions/Action'
+import { AirGapMarketWallet } from '@bobo-wallet/coin-lib'
+import { Action } from '@bobo-wallet/coin-lib/dist/actions/Action'
 
 import { DataService, DataServiceKey } from '../../services/data/data.service'
 import { LanguageService } from '../../services/language/language.service'

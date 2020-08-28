@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { ICoinDelegateProtocol, KusamaProtocol, PolkadotProtocol, TezosProtocol, CosmosProtocol } from 'airgap-coin-lib'
+import { ICoinDelegateProtocol, KusamaProtocol, PolkadotProtocol, TezosProtocol, CosmosProtocol } from '@bobo-wallet/coin-lib'
 
 import { AmountConverterPipe } from 'src/app/pipes/amount-converter/amount-converter.pipe'
 import { DecimalPipe } from '@angular/common'

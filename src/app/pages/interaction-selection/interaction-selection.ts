@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 import { ActivatedRoute, Router } from '@angular/router'
-import { AirGapMarketWallet, IAirGapTransaction } from 'airgap-coin-lib'
+import { AirGapMarketWallet, IAirGapTransaction } from '@bobo-wallet/coin-lib'
 
 import { DataService, DataServiceKey } from '../../services/data/data.service'
 import { DeepLinkProvider } from '../../services/deep-link/deep-link'

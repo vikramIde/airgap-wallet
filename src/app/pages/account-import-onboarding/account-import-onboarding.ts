@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
 import { IonSlides, Platform } from '@ionic/angular'
-import { getProtocolByIdentifier, ICoinProtocol } from 'airgap-coin-lib'
+import { getProtocolByIdentifier, ICoinProtocol } from '@bobo-wallet/coin-lib'
 
 import { DeepLinkProvider } from '../../services/deep-link/deep-link'
 import { ErrorCategory, handleErrorSentry } from '../../services/sentry-error-handler/sentry-error-handler'

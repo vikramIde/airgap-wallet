@@ -1,7 +1,7 @@
 var window = self;
 
 // available as airgapCoinLib due to browserify postInstall hook
-self.importScripts("../libs/airgap-coin-lib.browserify.js");
+self.importScripts("../libs/coin-lib.browserify.js");
 
 airgapCoinLib.addSupportedProtocol(new airgapCoinLib.AeternityProtocol())
 airgapCoinLib.addSupportedProtocol(new airgapCoinLib.HarmonyProtocol())

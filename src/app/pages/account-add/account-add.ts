@@ -1,8 +1,8 @@
 import { Component } from '@angular/core'
 import { Router } from '@angular/router'
-import { ICoinProtocol, supportedProtocols } from 'airgap-coin-lib'
-import { SubProtocolType } from 'airgap-coin-lib/dist/protocols/ICoinSubProtocol'
-import { NetworkType } from 'airgap-coin-lib/dist/utils/ProtocolNetwork'
+import { ICoinProtocol, supportedProtocols } from '@bobo-wallet/coin-lib'
+import { SubProtocolType } from '@bobo-wallet/coin-lib/dist/protocols/ICoinSubProtocol'
+import { NetworkType } from '@bobo-wallet/coin-lib/dist/utils/ProtocolNetwork'
 
 import { AccountProvider } from '../../services/account/account.provider'
 import { DataService, DataServiceKey } from '../../services/data/data.service'

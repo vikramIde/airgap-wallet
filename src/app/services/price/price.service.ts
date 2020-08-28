@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core'
-import { ICoinProtocol } from 'airgap-coin-lib'
-import { AirGapWalletPriceService, MarketDataSample, TimeUnit } from 'airgap-coin-lib/dist/wallet/AirGapMarketWallet'
+import { ICoinProtocol } from '@bobo-wallet/coin-lib'
+import { AirGapWalletPriceService, MarketDataSample, TimeUnit } from '@bobo-wallet/coin-lib/dist/wallet/AirGapMarketWallet'
 import BigNumber from 'bignumber.js'
 import * as cryptocompare from 'cryptocompare'
 

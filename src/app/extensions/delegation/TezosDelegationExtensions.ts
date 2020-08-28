@@ -1,9 +1,9 @@
 import { DecimalPipe } from '@angular/common'
 import { FormBuilder, FormGroup } from '@angular/forms'
 import { TranslateService } from '@ngx-translate/core'
-import { DelegationInfo, TezosDelegatorAction, TezosProtocol } from 'airgap-coin-lib'
-import { DelegateeDetails, DelegatorAction, DelegatorDetails } from 'airgap-coin-lib/dist/protocols/ICoinDelegateProtocol'
-import { NetworkType } from 'airgap-coin-lib/dist/utils/ProtocolNetwork'
+import { DelegationInfo, TezosDelegatorAction, TezosProtocol } from '@bobo-wallet/coin-lib'
+import { DelegateeDetails, DelegatorAction, DelegatorDetails } from '@bobo-wallet/coin-lib/dist/protocols/ICoinDelegateProtocol'
+import { NetworkType } from '@bobo-wallet/coin-lib/dist/utils/ProtocolNetwork'
 import BigNumber from 'bignumber.js'
 import * as moment from 'moment'
 import {

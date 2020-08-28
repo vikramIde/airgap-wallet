@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core'
-import { getProtocolByIdentifier, ICoinProtocol } from 'airgap-coin-lib'
-import { ProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+import { getProtocolByIdentifier, ICoinProtocol } from '@bobo-wallet/coin-lib'
+import { ProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 import { BigNumber } from 'bignumber.js'
 
 @Pipe({

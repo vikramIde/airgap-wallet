@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core'
-import { IAirGapTransaction, ICoinProtocol, getProtocolByIdentifier } from 'airgap-coin-lib'
+import { IAirGapTransaction, ICoinProtocol, getProtocolByIdentifier } from '@bobo-wallet/coin-lib'
 
 @Component({
   selector: 'transaction-item',

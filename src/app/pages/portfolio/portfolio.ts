@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 import { Router } from '@angular/router'
-import { AirGapMarketWallet, ICoinSubProtocol } from 'airgap-coin-lib'
+import { AirGapMarketWallet, ICoinSubProtocol } from '@bobo-wallet/coin-lib'
 import { Observable, ReplaySubject } from 'rxjs'
 
 import { CryptoToFiatPipe } from '../../pipes/crypto-to-fiat/crypto-to-fiat.pipe'

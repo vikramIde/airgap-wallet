@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
-import { IAirGapTransaction, ICoinProtocol } from 'airgap-coin-lib'
+import { IAirGapTransaction, ICoinProtocol } from '@bobo-wallet/coin-lib'
 import { getProtocolByIdentifierAndNetworkIdentifier } from 'src/app/services/account/account.provider'
 import { BrowserService } from 'src/app/services/browser/browser.service'
 

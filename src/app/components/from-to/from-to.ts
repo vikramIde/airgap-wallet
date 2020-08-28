@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core'
-import { IAirGapTransaction } from 'airgap-coin-lib'
-import { NetworkType } from 'airgap-coin-lib/dist/utils/ProtocolNetwork'
+import { IAirGapTransaction } from '@bobo-wallet/coin-lib'
+import { NetworkType } from '@bobo-wallet/coin-lib/dist/utils/ProtocolNetwork'
 
 @Component({
   selector: 'from-to',

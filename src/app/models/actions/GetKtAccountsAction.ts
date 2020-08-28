@@ -1,4 +1,4 @@
-import { ImportAccountAction } from 'airgap-coin-lib/dist/actions/GetKtAccountsAction'
+import { ImportAccountAction } from '@bobo-wallet/coin-lib/dist/actions/GetKtAccountsAction'
 
 import { WalletActionInfo } from '../ActionGroup'
 

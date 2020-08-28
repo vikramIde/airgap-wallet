@@ -18,10 +18,10 @@ import {
   IAirGapTransaction,
   ICoinProtocol,
   TezosProtocol
-} from 'airgap-coin-lib'
-import { TezosWrappedOperation } from 'airgap-coin-lib/dist/protocols/tezos/types/TezosWrappedOperation'
-import { NetworkType, ProtocolNetwork } from 'airgap-coin-lib/dist/utils/ProtocolNetwork'
-import { MainProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+} from '@bobo-wallet/coin-lib'
+import { TezosWrappedOperation } from '@bobo-wallet/coin-lib/dist/protocols/tezos/types/TezosWrappedOperation'
+import { NetworkType, ProtocolNetwork } from '@bobo-wallet/coin-lib/dist/utils/ProtocolNetwork'
+import { MainProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 import { AccountProvider } from 'src/app/services/account/account.provider'
 import { BeaconService } from 'src/app/services/beacon/beacon.service'
 import { DataService, DataServiceKey } from 'src/app/services/data/data.service'

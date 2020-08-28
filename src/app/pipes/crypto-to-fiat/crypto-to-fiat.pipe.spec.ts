@@ -1,4 +1,4 @@
-import { MainProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+import { MainProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 import { BigNumber } from 'bignumber.js'
 
 import { CryptoToFiatPipe } from './crypto-to-fiat.pipe'

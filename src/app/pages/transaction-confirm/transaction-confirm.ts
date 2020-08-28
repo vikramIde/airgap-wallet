@@ -2,7 +2,7 @@ import { BeaconResponseInputMessage } from '@airgap/beacon-sdk'
 import { Component } from '@angular/core'
 import { ActivatedRoute, Router } from '@angular/router'
 import { AlertController, LoadingController, Platform, ToastController } from '@ionic/angular'
-import { getProtocolByIdentifier, IACMessageDefinitionObject, ICoinProtocol, SignedTransaction } from 'airgap-coin-lib'
+import { getProtocolByIdentifier, IACMessageDefinitionObject, ICoinProtocol, SignedTransaction } from '@bobo-wallet/coin-lib'
 import { AccountProvider } from 'src/app/services/account/account.provider'
 import { BrowserService } from 'src/app/services/browser/browser.service'
 
@@ -10,7 +10,7 @@ import { BeaconService } from '../../services/beacon/beacon.service'
 import { PushBackendProvider } from '../../services/push-backend/push-backend'
 import { ErrorCategory, handleErrorSentry } from '../../services/sentry-error-handler/sentry-error-handler'
 import { SettingsKey, StorageProvider } from '../../services/storage/storage'
-import { NetworkType } from 'airgap-coin-lib/dist/utils/ProtocolNetwork'
+import { NetworkType } from '@bobo-wallet/coin-lib/dist/utils/ProtocolNetwork'
 
 const SECOND: number = 1000
 

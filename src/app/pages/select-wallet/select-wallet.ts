@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 import { ActivatedRoute, Router } from '@angular/router'
-import { AirGapMarketWallet } from 'airgap-coin-lib'
+import { AirGapMarketWallet } from '@bobo-wallet/coin-lib'
 
 import { AccountProvider } from '../../services/account/account.provider'
 import { DataService, DataServiceKey } from '../../services/data/data.service'

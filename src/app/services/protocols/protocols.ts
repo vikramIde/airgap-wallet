@@ -16,23 +16,23 @@ import {
   supportedProtocols,
   TezosKtProtocol,
   TezosProtocol
-} from 'airgap-coin-lib'
+} from '@bobo-wallet/coin-lib'
 import {
   EthereumERC20ProtocolConfig,
   EthereumERC20ProtocolOptions,
   EthereumProtocolNetwork
-} from 'airgap-coin-lib/dist/protocols/ethereum/EthereumProtocolOptions'
-import { TezosBTC } from 'airgap-coin-lib/dist/protocols/tezos/fa/TezosBTC'
-import { TezosBTCProtocolConfig, TezosFAProtocolOptions } from 'airgap-coin-lib/dist/protocols/tezos/fa/TezosFAProtocolOptions'
-import { TezosNetwork } from 'airgap-coin-lib/dist/protocols/tezos/TezosProtocol'
+} from '@bobo-wallet/coin-lib/dist/protocols/ethereum/EthereumProtocolOptions'
+import { TezosBTC } from '@bobo-wallet/coin-lib/dist/protocols/tezos/fa/TezosBTC'
+import { TezosBTCProtocolConfig, TezosFAProtocolOptions } from '@bobo-wallet/coin-lib/dist/protocols/tezos/fa/TezosFAProtocolOptions'
+import { TezosNetwork } from '@bobo-wallet/coin-lib/dist/protocols/tezos/TezosProtocol'
 import {
   TezblockBlockExplorer,
   TezosProtocolNetwork,
   TezosProtocolNetworkExtras,
   TezosProtocolOptions
-} from 'airgap-coin-lib/dist/protocols/tezos/TezosProtocolOptions'
-import { NetworkType } from 'airgap-coin-lib/dist/utils/ProtocolNetwork'
-import { ProtocolSymbols, SubProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+} from '@bobo-wallet/coin-lib/dist/protocols/tezos/TezosProtocolOptions'
+import { NetworkType } from '@bobo-wallet/coin-lib/dist/utils/ProtocolNetwork'
+import { ProtocolSymbols, SubProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 
 import { tokens } from './tokens'
 

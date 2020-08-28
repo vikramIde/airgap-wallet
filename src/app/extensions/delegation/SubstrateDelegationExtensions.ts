@@ -1,14 +1,14 @@
 import { DecimalPipe } from '@angular/common'
 import { FormBuilder, Validators } from '@angular/forms'
 import { TranslateService } from '@ngx-translate/core'
-import { SubstratePayee, SubstrateProtocol } from 'airgap-coin-lib'
-import { DelegatorAction } from 'airgap-coin-lib/dist/protocols/ICoinDelegateProtocol'
+import { SubstratePayee, SubstrateProtocol } from '@bobo-wallet/coin-lib'
+import { DelegatorAction } from '@bobo-wallet/coin-lib/dist/protocols/ICoinDelegateProtocol'
 import {
   SubstrateNominatorDetails,
   SubstrateStakingDetails
-} from 'airgap-coin-lib/dist/protocols/substrate/helpers/data/staking/SubstrateNominatorDetails'
-import { SubstrateStakingActionType } from 'airgap-coin-lib/dist/protocols/substrate/helpers/data/staking/SubstrateStakingActionType'
-import { SubstrateValidatorDetails } from 'airgap-coin-lib/dist/protocols/substrate/helpers/data/staking/SubstrateValidatorDetails'
+} from '@bobo-wallet/coin-lib/dist/protocols/substrate/helpers/data/staking/SubstrateNominatorDetails'
+import { SubstrateStakingActionType } from '@bobo-wallet/coin-lib/dist/protocols/substrate/helpers/data/staking/SubstrateStakingActionType'
+import { SubstrateValidatorDetails } from '@bobo-wallet/coin-lib/dist/protocols/substrate/helpers/data/staking/SubstrateValidatorDetails'
 import BigNumber from 'bignumber.js'
 import * as moment from 'moment'
 import {

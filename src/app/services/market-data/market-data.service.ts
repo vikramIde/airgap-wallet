@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core'
-import { AirGapMarketWallet, getProtocolByIdentifier, IAirGapTransaction } from 'airgap-coin-lib'
-import { MarketDataSample, TimeUnit } from 'airgap-coin-lib/dist/wallet/AirGapMarketWallet'
+import { AirGapMarketWallet, getProtocolByIdentifier, IAirGapTransaction } from '@bobo-wallet/coin-lib'
+import { MarketDataSample, TimeUnit } from '@bobo-wallet/coin-lib/dist/wallet/AirGapMarketWallet'
 import BigNumber from 'bignumber.js'
 import * as cryptocompare from 'cryptocompare'
 
 import { AmountConverterPipe } from '../../pipes/amount-converter/amount-converter.pipe'
 import { AccountProvider } from '../account/account.provider'
 import { CachingService, CachingServiceKey } from '../caching/caching.service'
-import { IAirGapTransactionResult } from 'airgap-coin-lib/dist/interfaces/IAirGapTransaction'
+import { IAirGapTransactionResult } from '@bobo-wallet/coin-lib/dist/interfaces/IAirGapTransaction'
 
 export interface BalanceAtTimestampObject {
   timestamp: number

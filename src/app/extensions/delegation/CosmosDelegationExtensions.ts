@@ -1,4 +1,4 @@
-import { CosmosProtocol } from 'airgap-coin-lib'
+import { CosmosProtocol } from '@bobo-wallet/coin-lib'
 import { ProtocolDelegationExtensions } from './ProtocolDelegationExtensions'
 import {
   AirGapDelegationDetails,
@@ -8,12 +8,12 @@ import {
 } from 'src/app/interfaces/IAirGapCoinDelegateProtocol'
 import { DecimalPipe } from '@angular/common'
 import { AmountConverterPipe } from 'src/app/pipes/amount-converter/amount-converter.pipe'
-import { DelegateeDetails, DelegatorDetails, DelegatorAction } from 'airgap-coin-lib/dist/protocols/ICoinDelegateProtocol'
+import { DelegateeDetails, DelegatorDetails, DelegatorAction } from '@bobo-wallet/coin-lib/dist/protocols/ICoinDelegateProtocol'
 import BigNumber from 'bignumber.js'
-import { CosmosValidator, CosmosUnbondingDelegation } from 'airgap-coin-lib/dist/protocols/cosmos/CosmosNodeClient'
+import { CosmosValidator, CosmosUnbondingDelegation } from '@bobo-wallet/coin-lib/dist/protocols/cosmos/CosmosNodeClient'
 import { UIWidget } from 'src/app/models/widgets/UIWidget'
 import { UIIconText } from 'src/app/models/widgets/display/UIIconText'
-import { CosmosDelegationActionType } from 'airgap-coin-lib/dist/protocols/cosmos/CosmosProtocol'
+import { CosmosDelegationActionType } from '@bobo-wallet/coin-lib/dist/protocols/cosmos/CosmosProtocol'
 import { FormBuilder, Validators } from '@angular/forms'
 import { UIAccountSummary } from 'src/app/models/widgets/display/UIAccountSummary'
 import { ShortenStringPipe } from 'src/app/pipes/shorten-string/shorten-string.pipe'

@@ -1,6 +1,6 @@
 import { NavController } from '@ionic/angular'
-import { AirGapMarketWallet } from 'airgap-coin-lib'
-import { Action } from 'airgap-coin-lib/dist/actions/Action'
+import { AirGapMarketWallet } from '@bobo-wallet/coin-lib'
+import { Action } from '@bobo-wallet/coin-lib/dist/actions/Action'
 
 import { IAccountWrapper } from '../../pages/sub-account-add/sub-account-add'
 import { AccountProvider } from '../../services/account/account.provider'

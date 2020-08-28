@@ -1,4 +1,4 @@
-import { AirGapMarketWallet, ICoinDelegateProtocol } from 'airgap-coin-lib'
+import { AirGapMarketWallet, ICoinDelegateProtocol } from '@bobo-wallet/coin-lib'
 import BigNumber from 'bignumber.js'
 import { AirGapDelegationDetails, IAirGapCoinDelegateProtocol } from 'src/app/interfaces/IAirGapCoinDelegateProtocol'
 import { UIAccountExtendedDetails } from 'src/app/models/widgets/display/UIAccountExtendedDetails'

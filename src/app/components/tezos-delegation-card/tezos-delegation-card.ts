@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
-import { AirGapMarketWallet } from 'airgap-coin-lib'
+import { AirGapMarketWallet } from '@bobo-wallet/coin-lib'
 
 @Component({
   selector: 'tezos-delegation-card',

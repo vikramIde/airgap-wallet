@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { ActivatedRoute, Router } from '@angular/router'
 import { Platform } from '@ionic/angular'
-import { AirGapMarketWallet, IAirGapTransaction } from 'airgap-coin-lib'
+import { AirGapMarketWallet, IAirGapTransaction } from '@bobo-wallet/coin-lib'
 import BigNumber from 'bignumber.js'
 
 import { DeepLinkProvider } from '../../services/deep-link/deep-link'

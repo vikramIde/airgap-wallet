@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing'
-import { AirGapMarketWallet, BitcoinProtocol, EthereumProtocol } from 'airgap-coin-lib'
+import { AirGapMarketWallet, BitcoinProtocol, EthereumProtocol } from '@bobo-wallet/coin-lib'
 import { take } from 'rxjs/operators'
 import { PUSH_NOTIFICATIONS_PLUGIN } from 'src/app/capacitor-plugins/injection-tokens'
 import { PriceServiceMock } from 'test-config/wallet-mock'

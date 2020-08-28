@@ -1,12 +1,12 @@
 import { animate, style, transition, trigger } from '@angular/animations'
 import { Component, EventEmitter, Input, Output } from '@angular/core'
 import { AlertController, ModalController } from '@ionic/angular'
-import { AirGapMarketWallet, getProtocolByIdentifier, ICoinProtocol } from 'airgap-coin-lib'
+import { AirGapMarketWallet, getProtocolByIdentifier, ICoinProtocol } from '@bobo-wallet/coin-lib'
 import { BigNumber } from 'bignumber.js'
 
 import { ProtocolSelectPage } from '../../pages/protocol-select/protocol-select'
 import { ErrorCategory, handleErrorSentry } from '../../services/sentry-error-handler/sentry-error-handler'
-import { ProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+import { ProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 
 @Component({
   selector: 'swap',

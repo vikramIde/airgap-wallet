@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core'
-import { IACMessageDefinitionObject, Serializer } from 'airgap-coin-lib'
-import { DeserializedSyncProtocol, SyncProtocolUtils } from 'airgap-coin-lib/dist/serializer/v1/serializer'
-import { MainProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+import { IACMessageDefinitionObject, Serializer } from '@bobo-wallet/coin-lib'
+import { DeserializedSyncProtocol, SyncProtocolUtils } from '@bobo-wallet/coin-lib/dist/serializer/v1/serializer'
+import { MainProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 
 import { parseIACUrl } from '../../utils/utils'
 import { SettingsKey, StorageProvider } from '../storage/storage'

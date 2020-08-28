@@ -2,7 +2,7 @@ import { Injectable, Inject } from '@angular/core'
 import { AlertController } from '@ionic/angular'
 import { TranslateService } from '@ngx-translate/core'
 import { AppPlugin } from '@capacitor/core'
-import { AirGapMarketWallet, IACMessageType, IAirGapTransaction } from 'airgap-coin-lib'
+import { AirGapMarketWallet, IACMessageType, IAirGapTransaction } from '@bobo-wallet/coin-lib'
 
 import { serializedDataToUrlString } from '../../utils/utils'
 import { ErrorCategory, handleErrorSentry } from '../sentry-error-handler/sentry-error-handler'

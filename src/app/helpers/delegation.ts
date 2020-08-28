@@ -1,6 +1,6 @@
-import { ICoinProtocol, ICoinDelegateProtocol, TezosProtocol } from 'airgap-coin-lib'
+import { ICoinProtocol, ICoinDelegateProtocol, TezosProtocol } from '@bobo-wallet/coin-lib'
 import { IAirGapCoinDelegateProtocol } from '../interfaces/IAirGapCoinDelegateProtocol'
-import { MainProtocolSymbols, SubProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+import { MainProtocolSymbols, SubProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 
 export function supportsDelegation(protocol: ICoinProtocol): protocol is ICoinDelegateProtocol {
   const delegateProtocol = protocol as ICoinDelegateProtocol

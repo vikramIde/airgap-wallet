@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { ActivatedRoute, Router } from '@angular/router'
-import { AirGapMarketWallet, getProtocolByIdentifier, ICoinProtocol } from 'airgap-coin-lib'
-import { ProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+import { AirGapMarketWallet, getProtocolByIdentifier, ICoinProtocol } from '@bobo-wallet/coin-lib'
+import { ProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 import { map } from 'rxjs/operators'
 import { PriceService } from 'src/app/services/price/price.service'
 

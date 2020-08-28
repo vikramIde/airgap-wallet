@@ -8,7 +8,7 @@ import {
   IACMessageDefinitionObject,
   IACMessageType,
   supportedProtocols
-} from 'airgap-coin-lib'
+} from '@bobo-wallet/coin-lib'
 
 import { DataService, DataServiceKey } from '../../services/data/data.service'
 import { SerializerService } from '../../services/serializer/serializer.service'

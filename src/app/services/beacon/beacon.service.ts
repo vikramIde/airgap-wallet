@@ -11,8 +11,8 @@ import {
 } from '@airgap/beacon-sdk'
 import { Injectable } from '@angular/core'
 import { LoadingController, ModalController } from '@ionic/angular'
-import { ICoinProtocol } from 'airgap-coin-lib'
-import { NetworkType } from 'airgap-coin-lib/dist/utils/ProtocolNetwork'
+import { ICoinProtocol } from '@bobo-wallet/coin-lib'
+import { NetworkType } from '@bobo-wallet/coin-lib/dist/utils/ProtocolNetwork'
 import { BeaconRequestPage } from 'src/app/pages/beacon-request/beacon-request.page'
 import { ErrorPage } from 'src/app/pages/error/error.page'
 
@@ -22,8 +22,8 @@ import {
   TezblockBlockExplorer,
   TezosProtocolNetworkExtras,
   TezosProtocolOptions
-} from 'airgap-coin-lib/dist/protocols/tezos/TezosProtocolOptions'
-import { TezosNetwork, TezosProtocol } from 'airgap-coin-lib/dist/protocols/tezos/TezosProtocol'
+} from '@bobo-wallet/coin-lib/dist/protocols/tezos/TezosProtocolOptions'
+import { TezosNetwork, TezosProtocol } from '@bobo-wallet/coin-lib/dist/protocols/tezos/TezosProtocol'
 
 @Injectable({
   providedIn: 'root'

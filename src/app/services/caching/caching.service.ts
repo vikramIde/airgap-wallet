@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core'
 import { Storage } from '@ionic/storage'
-import { AirGapMarketWallet } from 'airgap-coin-lib'
+import { AirGapMarketWallet } from '@bobo-wallet/coin-lib'
 import BigNumber from 'bignumber.js'
-import { IAirGapTransactionResult } from 'airgap-coin-lib/dist/interfaces/IAirGapTransaction'
+import { IAirGapTransactionResult } from '@bobo-wallet/coin-lib/dist/interfaces/IAirGapTransaction'
 
 export enum CachingServiceKey {
   PRICESAMPLES = 'pricesamples',

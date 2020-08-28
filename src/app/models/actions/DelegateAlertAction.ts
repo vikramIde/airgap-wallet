@@ -1,13 +1,13 @@
 import { AlertController, PopoverController, ToastController, LoadingController } from '@ionic/angular'
 import { AlertOptions } from '@ionic/core'
-import { Action } from 'airgap-coin-lib/dist/actions/Action'
+import { Action } from '@bobo-wallet/coin-lib/dist/actions/Action'
 
 import { LanguageService } from '../../services/language/language.service'
 import { WalletActionInfo } from '../ActionGroup'
 
 import { OperationsProvider } from 'src/app/services/operations/operations'
 import { AirGapDelegatorAction } from './DelegatorAction'
-import { TezosDelegatorAction, AirGapMarketWallet } from 'airgap-coin-lib'
+import { TezosDelegatorAction, AirGapMarketWallet } from '@bobo-wallet/coin-lib'
 import { DataService } from 'src/app/services/data/data.service'
 import { Router } from '@angular/router'
 

@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
-import { AirGapMarketWallet } from 'airgap-coin-lib'
+import { AirGapMarketWallet } from '@bobo-wallet/coin-lib'
 import { BigNumber } from 'bignumber.js'
 
 import { DecimalValidator } from '../../validators/DecimalValidator'

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core'
-import { AirGapMarketWallet, ICoinDelegateProtocol } from 'airgap-coin-lib'
-import { NetworkType } from 'airgap-coin-lib/dist/utils/ProtocolNetwork'
+import { AirGapMarketWallet, ICoinDelegateProtocol } from '@bobo-wallet/coin-lib'
+import { NetworkType } from '@bobo-wallet/coin-lib/dist/utils/ProtocolNetwork'
 import BigNumber from 'bignumber.js'
 import { Observable, Subscription } from 'rxjs'
 import { supportsDelegation } from 'src/app/helpers/delegation'

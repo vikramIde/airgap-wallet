@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core'
 import { Router } from '@angular/router'
 import { PushNotification } from '@capacitor/core'
 import { AlertController, LoadingController, PopoverController, ToastController } from '@ionic/angular'
-import { AirGapMarketWallet, getProtocolByIdentifier, ICoinProtocol, supportedProtocols, TezosProtocol } from 'airgap-coin-lib'
-import { TezosProtocolNetwork, TezosProtocolOptions } from 'airgap-coin-lib/dist/protocols/tezos/TezosProtocolOptions'
-import { ProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+import { AirGapMarketWallet, getProtocolByIdentifier, ICoinProtocol, supportedProtocols, TezosProtocol } from '@bobo-wallet/coin-lib'
+import { TezosProtocolNetwork, TezosProtocolOptions } from '@bobo-wallet/coin-lib/dist/protocols/tezos/TezosProtocolOptions'
+import { ProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 import { ReplaySubject, Subject } from 'rxjs'
 import { auditTime, map, take } from 'rxjs/operators'
 import { isType } from 'src/app/utils/utils'
@@ -226,7 +226,7 @@ export class AccountProvider {
     return new Promise<void>(resolve => {
       // if we have no addresses, derive using webworker and sync, else just sync
       if (airGapWallet.addresses.length === 0 || (airGapWallet.isExtendedPublicKey && airGapWallet.addresses.length < 20)) {
-        const airGapWorker = new Worker('./assets/workers/airgap-coin-lib.js')
+        const airGapWorker = new Worker('./assets/workers/coin-lib.js')
 
         airGapWorker.onmessage = event => {
           airGapWallet.addresses = event.data.addresses

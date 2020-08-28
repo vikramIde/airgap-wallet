@@ -1,5 +1,5 @@
-import { Action } from 'airgap-coin-lib/dist/actions/Action'
-import { RepeatableAction } from 'airgap-coin-lib/dist/actions/RepeatableAction'
+import { Action } from '@bobo-wallet/coin-lib/dist/actions/Action'
+import { RepeatableAction } from '@bobo-wallet/coin-lib/dist/actions/RepeatableAction'
 
 export interface ButtonActionContext {
   name: string

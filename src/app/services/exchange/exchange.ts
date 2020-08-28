@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core'
-import { getProtocolByIdentifier, IAirGapTransaction } from 'airgap-coin-lib'
-import { ProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+import { getProtocolByIdentifier, IAirGapTransaction } from '@bobo-wallet/coin-lib'
+import { ProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 import { BigNumber } from 'bignumber.js'
 import { BehaviorSubject } from 'rxjs'
 

@@ -1,8 +1,8 @@
-import { Action } from 'airgap-coin-lib/dist/actions/Action'
-import { ImportAccountAction, ImportAccoutActionContext } from 'airgap-coin-lib/dist/actions/GetKtAccountsAction'
-import { LinkedAction } from 'airgap-coin-lib/dist/actions/LinkedAction'
-import { SimpleAction } from 'airgap-coin-lib/dist/actions/SimpleAction'
-import { SubProtocolType } from 'airgap-coin-lib/dist/protocols/ICoinSubProtocol'
+import { Action } from '@bobo-wallet/coin-lib/dist/actions/Action'
+import { ImportAccountAction, ImportAccoutActionContext } from '@bobo-wallet/coin-lib/dist/actions/GetKtAccountsAction'
+import { LinkedAction } from '@bobo-wallet/coin-lib/dist/actions/LinkedAction'
+import { SimpleAction } from '@bobo-wallet/coin-lib/dist/actions/SimpleAction'
+import { SubProtocolType } from '@bobo-wallet/coin-lib/dist/protocols/ICoinSubProtocol'
 
 import { AccountTransactionListPage } from '../pages/account-transaction-list/account-transaction-list'
 import { DataServiceKey } from '../services/data/data.service'
@@ -12,9 +12,9 @@ import { AddTokenAction, AddTokenActionContext } from './actions/AddTokenAction'
 import { ButtonAction, ButtonActionContext } from './actions/ButtonAction'
 import { AirGapTezosMigrateAction } from './actions/TezosMigrateAction'
 import { AirGapDelegatorAction, AirGapDelegatorActionContext } from './actions/DelegatorAction'
-import { CosmosDelegationActionType } from 'airgap-coin-lib/dist/protocols/cosmos/CosmosProtocol'
-import { AirGapMarketWallet, getProtocolByIdentifier } from 'airgap-coin-lib'
-import { SubProtocolSymbols, MainProtocolSymbols } from 'airgap-coin-lib/dist/utils/ProtocolSymbols'
+import { CosmosDelegationActionType } from '@bobo-wallet/coin-lib/dist/protocols/cosmos/CosmosProtocol'
+import { AirGapMarketWallet, getProtocolByIdentifier } from '@bobo-wallet/coin-lib'
+import { SubProtocolSymbols, MainProtocolSymbols } from '@bobo-wallet/coin-lib/dist/utils/ProtocolSymbols'
 
 interface DelegatorButtonActionContext extends ButtonActionContext {
   type: any

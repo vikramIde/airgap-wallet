@@ -1,7 +1,7 @@
 import { FormGroup } from '@angular/forms'
 import { SafeUrl } from '@angular/platform-browser'
-import { ICoinDelegateProtocol } from 'airgap-coin-lib'
-import { DelegateeDetails, DelegatorDetails } from 'airgap-coin-lib/dist/protocols/ICoinDelegateProtocol'
+import { ICoinDelegateProtocol } from '@bobo-wallet/coin-lib'
+import { DelegateeDetails, DelegatorDetails } from '@bobo-wallet/coin-lib/dist/protocols/ICoinDelegateProtocol'
 import BigNumber from 'bignumber.js'
 
 import { UIAccountExtendedDetails } from '../models/widgets/display/UIAccountExtendedDetails'
