@@ -24,6 +24,7 @@ export class TransactionDetailPage {
 
   public async openBlockexplorer() {
     const transaction: any = this.transaction
+    console.log(transaction, 'transaction')
     const hash: string = transaction.hash
 
     const protocol: ICoinProtocol = getProtocolByIdentifierAndNetworkIdentifier(
@@ -40,6 +41,7 @@ export class TransactionDetailPage {
         this.transaction.isInbound ? this.transaction.to[0] : this.transaction.from[0]
       )
     }
+    console.log(blockexplorer, 'blockexplorer')
     await this.browserService.openUrl(blockexplorer)
   }
 }

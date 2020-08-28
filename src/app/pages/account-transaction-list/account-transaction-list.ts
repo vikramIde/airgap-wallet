@@ -288,7 +288,6 @@ export class AccountTransactionListPage {
         console.error(error)
       })
     ])
-
     this.transactionResult = transactionResult
     return transactionResult.transactions
   }
