@@ -353,7 +353,6 @@ export class TransactionPreparePage {
 
       const feeDefaults: FeeDefaults = await this.estimateFees().catch(() => undefined)
       const feeLevel: number = feeDefaults && !this.isSubstrate ? 1 : this._state.feeLevel.value
-
       this.updateState({
         estimatingFeeDefaults: false,
         feeDefaults,
@@ -407,6 +406,7 @@ export class TransactionPreparePage {
         amount,
         fee
       )
+
       const info = {
         wallet: this.wallet,
         airGapTxs,

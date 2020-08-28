@@ -353,12 +353,10 @@ export class OperationsProvider {
       } else {
         rawUnsignedTx = await wallet.prepareTransaction([address], [amount.toString(10)], fee.toString(10), data)
       }
-
       const airGapTxs = await wallet.protocol.getTransactionDetails({
         publicKey: wallet.publicKey,
         transaction: rawUnsignedTx
       })
-
       const serializedTxChunks: string[] = await this.serializeTx(wallet, rawUnsignedTx)
 
       return { airGapTxs, serializedTxChunks }
